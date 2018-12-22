@@ -5,19 +5,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnCall, btnSms, btnEmail, btnContact;
+    ImageButton btnCall, btnSms, btnEmail, btnContact;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnCall = (Button)findViewById(R.id.btnCall);
-        btnSms = (Button)findViewById(R.id.btnSms);
-        btnEmail = (Button)findViewById(R.id.btnEmail);
-        btnContact = (Button)findViewById(R.id.btnContact);
+        btnCall = (ImageButton)findViewById(R.id.btnCall);
+        btnSms = (ImageButton)findViewById(R.id.btnSms);
+        btnEmail = (ImageButton)findViewById(R.id.btnEmail);
+        btnContact = (ImageButton)findViewById(R.id.btnContact);
     }
 
     public void callIntentTransition(View v){
